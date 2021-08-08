@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cat Generator Challenge</title>
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challenge 1: Your Age in Days</h2>
+        <div class='flex-box-container-1'>
+
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()"> enter age</button>
+            </div>
+                <div>
+                <button class="btn btn-danger" onclick="resetParams()">reset</button>
+                </div>
+        </div>
+            <div class='flex-box-container-1'>
+
+                <div id='flex-box-result'></div>
+            </div>
+
+    </div>
+
+    <!-- CHALLENGE NUMBER 2 HTML SECTION  -->
+
+    <div class="container-2">
+        <h2>Challenge 2: Cat Generator</h2>
+        <button class='btn btn-success' id='cat-generator' onclick="generateCat()">Generate Cat</button>
+        <br /><br />
+
+
+        <div class='flex-box-container-2' id='flex-box-gen'>
+
+                <!-- <img src="https://thecatapi.com/api/images/get?format=src&type=gif&size=small" alt="cat-images">
+                <img src="https://thecatapi.com/api/images/get?format=src&type=gif&size=small" alt="cat-images">
+                <img src="https://thecatapi.com/api/images/get?format=src&type=gif&size=small" alt="cat-images">
+                <img src="https://thecatapi.com/api/images/get?format=src&type=gif&size=small" alt="cat-images">
+                <img src="https://thecatapi.com/api/images/get?format=src&type=gif&size=small" alt="cat-images"> -->
+
+
+        </div>
+    </div>
+        <div class="container-3">
+
+            <h2>Challenge 3: Rock Paper Scissors</h2>    
+            
+            <div class='flex-box-rps' id='flex-box-rps'>
+
+                    <div>
+                        <img src="images/rock.png" alt="cat-images" width="150" height="150" id='rock' onclick="rpsGame(this)">
+                    </div>
+                        
+                    <div>
+                        <img src="./images/paper.png" alt="cat-images" width="150" height="150" id='paper' onclick="rpsGame(this)">
+                    </div>
+
+                    <div>
+                        <img src="./images/scissors.jpeg" alt="cat-images" width="150" height="150" id='scissors' onclick="rpsGame(this)">    
+                    </div>
+            </div>
+        </div>
+
+    <script src='./js/script.js'></script>
+    
+</body>
+</html>
